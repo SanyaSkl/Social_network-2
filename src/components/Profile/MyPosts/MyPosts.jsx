@@ -1,34 +1,28 @@
-import React from 'react';
-import classes from './MyPosts.module.css';
+import React from 'react'
+import classes from './MyPosts.module.css'
 import Post from "./Post/Post";
 
 const MyPosts = (props) => {
-
-
-    let postsElements =
-        props.posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>);
-
+    let postsElements = props.posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>);
     let newPostElement = React.createRef();
-
     let addPost = () => {
-        let text = newPostElement.current.value;
-        props.addPost(text);
-        newPostElement.current.value = '';
+        let text = newPostElement.current.value
+        alert(text);
     }
 
     return (
         <div className={classes.postsBlock}>
-            <h3>My posts</h3>
+            <h3>MyPosts</h3>
+        <div>
+    <div>
+        <textarea ref={newPostElement}/>
+    </div>
             <div>
-                <div>
-                   <textarea ref={newPostElement}/>
-                </div>
-                <div>
-                    <button onClick={ addPost }>Add post</button>
-                </div>
+                <button onClick={ addPost }>Add post</button>
             </div>
+        </div>
             <div className={classes.posts}>
-                {postsElements}
+                { postsElements }
             </div>
         </div>
     )
