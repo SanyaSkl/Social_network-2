@@ -10,5 +10,4 @@ export let rerenderEntireThree = (state) => {
         <BrowserRouter>
             <App state={state} addPost={addPost}/>,
         </BrowserRouter>, document.getElementById('root'));
-
 }
