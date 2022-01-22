@@ -1,44 +1,32 @@
 import React from "react";
-import styles from './users.module.css';
+import styles from "./users.module.css";
+import userPhoto from "../../assets/image/file-svg-user-secret-icon-11569049811cejqlj9khf.png";
+import {NavLink} from "react-router-dom";
+
 
 let Users = (props) => {
 
-    if (props.users.length === 0) {
-        props.setUsers([
-                {
-                    id: 1,
-                    photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0tSL2xn7NKb9XpMXAQ60A8rYo8DvBQPCk3A&usqp=CAU',
-                    followed: false,
-                    fullName: 'Sasha',
-                    status: 'I am a boss',
-                    location: {city: 'Stary Oskol', country: 'Russia'}
-                },
-                {
-                    id: 2,
-                    photoUrl: 'http://i24.com.ua/data/files/2014/10/27/17a2bd7fe89a4da0cf6593e14887c0b0.jpg',
-                    followed: false,
-                    fullName: 'Olya',
-                    status: 'Boss wife',
-                    location: {city: 'Stary Oskol', country: 'Russia'}
-                },
-                {
-                    id: 3,
-                    photoUrl: 'https://sun9-52.userapi.com/impg/r6lR2Z_J38my8uS0PROHNRjN-rBGpBZr93sTxw/z9R8T7R0saM.jpg?size=550x604&quality=96&sign=146f88fe728393153b668dc1b22a5a84&type=album',
-                    followed: true,
-                    fullName: 'Roma',
-                    status: 'The guru and the boss\'s right hand ',
-                    location: {city: 'Moscow', country: 'Russia'}
-                },
-            ]
-        )
+    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+    let pages = [];
+    for (let i=1; i <= pagesCount; i++) {
+        pages.push(i);
     }
-
-    return <div>
-        {
-            props.users.map(u => <div key={u.id}>
+        return <div>
+            <div>
+                {pages.map(p => {
+                    return <span className={props.currentPage === p && styles.selectedPage}
+                                 onClick={(e) => {
+                                     props.onPageChanged(p);
+                                 }}>{p}</span>
+                })}
+            </div>
+            {
+                props.users.map(u => <div key={u.id}>
             <span>
                 <div>
-                    <img src={u.photoUrl} className={styles.userPhoto}/>
+                    <NavLink to={'/profile/' + u.id}>
+                    <img src={u.photos.small != null ? u.photos.small : userPhoto} className={styles.userPhoto}/>
+                    </NavLink>
                 </div>
                 <div>
                     {u.followed
@@ -51,19 +39,20 @@ let Users = (props) => {
 
                 </div>
             </span>
-                <span>
                     <span>
-                       <div>{u.fullName}</div>
+                    <span>
+                       <div>{u.name}</div>
                         <div>{u.status}</div>
                     </span>
                     <span>
-                        <div>{u.location.country}</div>
-                        <div>{u.location.city}</div>
+                        <div>{"u.location.country"}</div>
+                        <div>{"u.location.city"}</div>
                     </span>
                 </span>
-            </div>)
-        }
-    </div>
-}
+                </div>)
+            }
+        </div>
+    }
+
 
 export default Users;
