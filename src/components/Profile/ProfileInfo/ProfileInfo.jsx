@@ -8,12 +8,12 @@ const ProfileInfo = (props) => {
 
     return (
         <div>
-            <div>
+            <div className={classes.item}>
                 <img src='https://www.technipages.com/wp-content/uploads/2019/07/Cover-600x371.jpg' alt={2}/>
             </div>
             <div className={classes.descriptionBlock}>
                 <img src={props.profile.photos.large}/>
-                ava+description
+                <div>ava+description</div>
             </div>
         </div>
     )
