@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Social_network-2/static/css/main.9146e0ae.css",
+    "main.js": "/Social_network-2/static/js/main.c0c77d6c.js",
+    "static/css/193.0815ace8.chunk.css": "/Social_network-2/static/css/193.0815ace8.chunk.css",
+    "static/js/193.8a506678.chunk.js": "/Social_network-2/static/js/193.8a506678.chunk.js",
+    "static/css/815.4f0624d2.chunk.css": "/Social_network-2/static/css/815.4f0624d2.chunk.css",
+    "static/js/815.fed9771c.chunk.js": "/Social_network-2/static/js/815.fed9771c.chunk.js",
+    "static/css/797.64983b98.chunk.css": "/Social_network-2/static/css/797.64983b98.chunk.css",
+    "static/js/797.f3fc2d75.chunk.js": "/Social_network-2/static/js/797.f3fc2d75.chunk.js",
+    "static/js/787.1dad4a64.chunk.js": "/Social_network-2/static/js/787.1dad4a64.chunk.js",
+    "static/js/434.6e510472.chunk.js": "/Social_network-2/static/js/434.6e510472.chunk.js",
+    "static/media/file-svg-user-secret-icon-11569049811cejqlj9khf.png": "/Social_network-2/static/media/file-svg-user-secret-icon-11569049811cejqlj9khf.40a377fae2601a2eb85d.png",
+    "index.html": "/Social_network-2/index.html",
+    "static/media/Ball-1.2s-200px.svg": "/Social_network-2/static/media/Ball-1.2s-200px.0a632cd9bbece7ce8100052d60c1b5cd.svg",
+    "main.9146e0ae.css.map": "/Social_network-2/static/css/main.9146e0ae.css.map",
+    "main.c0c77d6c.js.map": "/Social_network-2/static/js/main.c0c77d6c.js.map",
+    "193.0815ace8.chunk.css.map": "/Social_network-2/static/css/193.0815ace8.chunk.css.map",
+    "193.8a506678.chunk.js.map": "/Social_network-2/static/js/193.8a506678.chunk.js.map",
+    "815.4f0624d2.chunk.css.map": "/Social_network-2/static/css/815.4f0624d2.chunk.css.map",
+    "815.fed9771c.chunk.js.map": "/Social_network-2/static/js/815.fed9771c.chunk.js.map",
+    "797.64983b98.chunk.css.map": "/Social_network-2/static/css/797.64983b98.chunk.css.map",
+    "797.f3fc2d75.chunk.js.map": "/Social_network-2/static/js/797.f3fc2d75.chunk.js.map",
+    "787.1dad4a64.chunk.js.map": "/Social_network-2/static/js/787.1dad4a64.chunk.js.map",
+    "434.6e510472.chunk.js.map": "/Social_network-2/static/js/434.6e510472.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9146e0ae.css",
+    "static/js/main.c0c77d6c.js"
+  ]
+}
