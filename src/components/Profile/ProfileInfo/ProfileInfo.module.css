@@ -2,7 +2,10 @@
     padding: 10px;
 }
 
-.item img {
-    width: 1000px;
-    height: 300px;
+.mainPhoto {
+    width: 200px;
+}
+
+.contact {
+ padding-left: 20px;
 }
